@@ -9,6 +9,7 @@ class Filter extends React.Component {
       category: 'all',
       filterData: this.props.data,
       showCount: 3,
+      favorites: [],
     }
   }
 
@@ -59,6 +60,10 @@ class Filter extends React.Component {
     })
   }
 
+  addFavorite() {
+
+  }
+
   render() {
     return (
       <section className="filter-container">
@@ -72,6 +77,8 @@ class Filter extends React.Component {
         {this.state.filterData.slice(0, this.state.showCount).map((item) => {
           return (
             <Card
+                favorite={item.favorite}
+                key={item.id}
                 className={item.className}
                 category={item.category}
                 classCount={item.classCount}

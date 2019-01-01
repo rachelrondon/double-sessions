@@ -17,6 +17,7 @@ class App extends React.Component {
       data: [
         {
           id: 1,
+          favorite: '',
           className: "Wind down with a restorative class",
           category: "restorative",
           classCount: 0,
@@ -25,6 +26,7 @@ class App extends React.Component {
         },
         {
           id: 2,
+          favorite: '',
           className: "Wind down with a restorative class",
           category: "restorative",
           classCount: 0,
@@ -33,6 +35,7 @@ class App extends React.Component {
         },
         {
           id: 3,
+          favorite: '',
           className: "Wind down with a restorative class",
           category: "restorative",
           classCount: 0,
@@ -41,6 +44,7 @@ class App extends React.Component {
         },
         {
           id: 4,
+          favorite: '',
           className: "Wind down with a restorative class",
           category: "restorative",
           classCount: 0,
@@ -49,6 +53,7 @@ class App extends React.Component {
         },
         {
           id: 5,
+          favorite: '',
           className: "One hour Yoga Sculpt Class",
           category: "sculpt",
           classCount: 0,
@@ -57,6 +62,7 @@ class App extends React.Component {
         },
         {
           id: 6,
+          favorite: '',
           className: "One hour Yoga Sculpt Class",
           category: "sculpt",
           classCount: 0,
@@ -65,6 +71,7 @@ class App extends React.Component {
         },
         {
           id: 7,
+          favorite: '',
           className: "One hour Yoga Sculpt Class",
           category: "sculpt",
           classCount: 0,
@@ -73,6 +80,7 @@ class App extends React.Component {
         },
         {
           id: 8,
+          favorite: '',
           className: "One hour Yoga Sculpt Class",
           category: "sculpt",
           classCount: 0,
@@ -81,6 +89,7 @@ class App extends React.Component {
         },
         {
           id: 9,
+          favorite: '',
           className: "Deep Stretch with a Yoga Flow",
           category: "flow",
           classCount: 0,
@@ -89,6 +98,7 @@ class App extends React.Component {
         },
         {
           id: 10,
+          favorite: '',
           className: "Flow Class",
           category: "flow",
           classCount: 0,
@@ -97,6 +107,7 @@ class App extends React.Component {
         },
         {
           id: 11,
+          favorite: '',
           className: "Flow Class",
           category: "flow",
           classCount: 0,
@@ -105,6 +116,7 @@ class App extends React.Component {
         },
         {
           id: 12,
+          favorite: '',
           className: "Flow Class",
           category: "flow",
           classCount: 0,
@@ -113,6 +125,7 @@ class App extends React.Component {
         },
         {
           id: 13,
+          favorite: '',
           className: "Flow Class",
           category: "flow",
           classCount: 0,
@@ -121,6 +134,7 @@ class App extends React.Component {
         },
         {
           id: 14,
+          favorite: '',
           className: "Sculpt Class",
           category: "sculpt",
           classCount: 0,
@@ -129,6 +143,7 @@ class App extends React.Component {
         },
         {
           id: 15,
+          favorite: '',
           className: "Restorative class",
           category: "restorative",
           classCount: 0,
@@ -137,6 +152,7 @@ class App extends React.Component {
         },
         {
           id: 16,
+          favorite: '',
           className: "Sculpt Class",
           category: "sculpt",
           classCount: 0,
@@ -145,6 +161,7 @@ class App extends React.Component {
         },
         {
           id: 17,
+          favorite: '',
           className: "Flow Class",
           category: "flow",
           classCount: 0,
@@ -153,6 +170,7 @@ class App extends React.Component {
         },
         {
           id: 18,
+          favorite: '',
           className: "One hour Yoga Sculpt Class",
           category: "sculpt",
           classCount: 0,
@@ -161,6 +179,7 @@ class App extends React.Component {
         },
         {
           id: 19,
+          favorite: '',
           className: "Deep Stretch with a Yoga Flow",
           category: "flow",
           classCount: 0,
@@ -169,6 +188,7 @@ class App extends React.Component {
         },
         {
           id: 20,
+          favorite: '',
           className: "Wind down with a restorative class",
           category: "restorative",
           classCount: 0,

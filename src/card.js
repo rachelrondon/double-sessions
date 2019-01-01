@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const Card = ({className, category, classCount, image, imageTxt}) => {
+const Card = ({className, category, classCount, image, imageTxt, key}) => {
+
   return (
       <section className="card-container">
-        <div className="card">
-          <img className="image" src={image} alt={imageTxt} />
-          <p className="category-txt">{category}</p> 
+        <div className="card" key={key}>
+          <img className="card-image" src={image} alt={imageTxt} />
+          <p className="card-text">{category}</p>
+          <button className="card-favorite">Favorite</button>
         </div>
         <div className="card-content">
           <p>This is the count: {classCount}</p>
