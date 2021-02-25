@@ -75,3 +75,18 @@ ul {
   background-color: rgba(0,43,63,0.87);
   border-radius: 1rem;
 }
+
+.filter-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.filter {
+  margin: 1rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  color: #ffffff;
+  background-color: rgba(0,43,63,0.87);
+  border-radius: 1rem;
+}

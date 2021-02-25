@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from './card.js';
+import Filter from './filter.js';
 import YogaOne from './images/yoga-one.jpg';
 import YogaTwo from './images/yoga-two.jpg';
 import YogaThree from './images/yoga-three.jpg';
@@ -12,7 +13,6 @@ class LandingPage extends React.Component {
     super(props);
 
     this.state = {
-      count: 0,
       data: [
         {
           className: "Wind down with a restorative class",
@@ -98,6 +98,7 @@ class LandingPage extends React.Component {
   render() {
     return (
       <div className="container">
+        <p>{this.state.count}</p>
         {this.state.data.map((data) => {
           return (
             <Card
@@ -109,6 +110,9 @@ class LandingPage extends React.Component {
             />
           )
         })}
+        <Filter
+          data={this.state.data}
+        />
       </div>
     )
   }
