@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-size: 16px;
 }
 
 .App-logo {
@@ -35,4 +36,42 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 5rem;
+  justify-content: center;
+}
+
+.card-container {
+  width: 25%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  text-align: left;
+  position: relative;
+}
+
+.image {
+  height: auto;
+  width: 100%;
+  max-height: 200px;
+}
+
+.category-txt {
+  position: absolute;
+  margin: 0.5rem;
+  top: 0;
+  padding: 0.5rem;
+  color: #ffffff;
+  background-color: rgba(0,43,63,0.87);
+  border-radius: 1rem;
 }
