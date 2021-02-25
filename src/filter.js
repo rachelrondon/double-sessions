@@ -16,6 +16,7 @@ class Filter extends React.Component {
     this.setState({
       category: 'all',
       filterData: this.props.data,
+      showCount: 3,
     })
   }
 
@@ -26,6 +27,7 @@ class Filter extends React.Component {
     this.setState({
       category: 'flow',
       filterData: filteredList,
+      showCount: 3,
     })
   }
 
@@ -36,6 +38,7 @@ class Filter extends React.Component {
     this.setState({
       category: 'sculpt',
       filterData: filteredList,
+      showCount: 3,
     })
   }
 
@@ -45,7 +48,8 @@ class Filter extends React.Component {
     });
     this.setState({
       category: 'restorative',
-      filterData: filteredList
+      filterData: filteredList,
+      showCount: 3,
     })
   }
 
