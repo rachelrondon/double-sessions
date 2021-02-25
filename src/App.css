@@ -90,3 +90,8 @@ ul {
   background-color: rgba(0,43,63,0.87);
   border-radius: 1rem;
 }
+
+.filter-container {
+  display: flex;
+  flex-direction: column;
+}

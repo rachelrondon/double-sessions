@@ -1,7 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import LandingPage from './landingPage.js';
 import Filter from './filter.js';
 import YogaOne from './images/yoga-one.jpg';
 import YogaTwo from './images/yoga-two.jpg';
@@ -102,7 +101,6 @@ class App extends React.Component {
         <div className="App">
           <h1>Double Sessions</h1>
           <Filter data={this.state.data} />
-          <LandingPage data={this.state.data} />
         </div>
     )
   }
