@@ -8,6 +8,7 @@ class Filter extends React.Component {
     this.state = {
       category: 'all',
       filterData: this.props.data,
+      showCount: 3,
     }
   }
 
@@ -48,6 +49,12 @@ class Filter extends React.Component {
     })
   }
 
+  loadMore() {
+    this.setState({
+      showCount: this.state.showCount + 3
+    })
+  }
+
   render() {
     return (
       <section className="filter-container">
@@ -58,7 +65,7 @@ class Filter extends React.Component {
           <button onClick={this.showAll.bind(this)} className="filter">Show All</button>
         </div>
         <div className="container">
-        {this.state.filterData.map((item) => {
+        {this.state.filterData.slice(0, this.state.showCount).map((item) => {
           return (
             <Card
                 className={item.className}
@@ -70,6 +77,7 @@ class Filter extends React.Component {
           )
         })}
         </div>
+        <button onClick={this.loadMore.bind(this)}>Load More</button>
       </section>
     )
   }
