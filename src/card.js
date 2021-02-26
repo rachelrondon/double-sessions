@@ -7,7 +7,6 @@ const Card = ({className, category, classCount, image, imageTxt, key}) => {
         <div className="card" key={key}>
           <img className="card-image" src={image} alt={imageTxt} />
           <p className="card-text">{category}</p>
-          <button className="card-favorite">Favorite</button>
         </div>
         <div className="card-content">
           <p>This is the count: {classCount}</p>

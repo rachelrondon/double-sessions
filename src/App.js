@@ -2,11 +2,10 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Filter from './filter.js';
+import Nav from './nav.js';
 import YogaOne from './images/yoga-one.jpg';
-import YogaTwo from './images/yoga-two.jpg';
 import YogaThree from './images/yoga-three.jpg';
 import YogaFour from './images/yoga-four.jpg';
-import YogaFive from './images/yoga-five.jpg';
 import YogaSix from './images/yoga-six.jpg';
 
 class App extends React.Component {
@@ -57,7 +56,7 @@ class App extends React.Component {
           className: "One hour Yoga Sculpt Class",
           category: "sculpt",
           classCount: 0,
-          image: YogaTwo,
+          image: YogaThree,
           imageTxt: 'sculpt yoga'
         },
         {
@@ -66,7 +65,7 @@ class App extends React.Component {
           className: "One hour Yoga Sculpt Class",
           category: "sculpt",
           classCount: 0,
-          image: YogaTwo,
+          image: YogaThree,
           imageTxt: 'sculpt yoga'
         },
         {
@@ -75,7 +74,7 @@ class App extends React.Component {
           className: "One hour Yoga Sculpt Class",
           category: "sculpt",
           classCount: 0,
-          image: YogaTwo,
+          image: YogaThree,
           imageTxt: 'sculpt yoga'
         },
         {
@@ -84,7 +83,7 @@ class App extends React.Component {
           className: "One hour Yoga Sculpt Class",
           category: "sculpt",
           classCount: 0,
-          image: YogaTwo,
+          image: YogaThree,
           imageTxt: 'sculpt yoga'
         },
         {
@@ -138,7 +137,7 @@ class App extends React.Component {
           className: "Sculpt Class",
           category: "sculpt",
           classCount: 0,
-          image: YogaFive,
+          image: YogaThree,
           imageTxt: "sculpt yoga"
         },
         {
@@ -156,7 +155,7 @@ class App extends React.Component {
           className: "Sculpt Class",
           category: "sculpt",
           classCount: 0,
-          image: YogaFive,
+          image: YogaThree,
           imageTxt: "sculpt yoga"
         },
         {
@@ -174,7 +173,7 @@ class App extends React.Component {
           className: "One hour Yoga Sculpt Class",
           category: "sculpt",
           classCount: 0,
-          image: YogaTwo,
+          image: YogaThree,
           imageTxt: 'sculpt yoga'
         },
         {
@@ -202,7 +201,7 @@ class App extends React.Component {
   render() {
     return (
         <div className="App">
-          <h1>Double Sessions</h1>
+          <Nav /> 
           <Filter data={this.state.data} />
         </div>
     )
