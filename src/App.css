@@ -165,8 +165,8 @@ ul {
 }
 
 .collection-card-container {
-  width: 45%;
-  margin: 1rem;
+  width: 33%;
+  height: auto;
   display: flex;
   flex-direction: column;
   background-color: #faf9f7;
