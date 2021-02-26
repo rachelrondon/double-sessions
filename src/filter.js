@@ -23,7 +23,7 @@ class Filter extends React.Component {
 
   showFlow() {
     let filteredList = this.props.data.filter((item) => {
-      return item.category === "flow";
+      return item.category === "Flow";
     });
     this.setState({
       category: 'flow',
@@ -34,7 +34,7 @@ class Filter extends React.Component {
 
   showSculpt() {
     let filteredList = this.props.data.filter((item) => {
-      return item.category === "sculpt";
+      return item.category === "Sculpt";
     });
     this.setState({
       category: 'sculpt',
@@ -45,7 +45,7 @@ class Filter extends React.Component {
 
   showRestorative() {
     let filteredList = this.props.data.filter((item) => {
-      return item.category === "restorative";
+      return item.category === "Restorative";
     });
     this.setState({
       category: 'restorative',
@@ -80,11 +80,14 @@ class Filter extends React.Component {
                 classCount={item.classCount}
                 image={item.image}
                 imageTxt={item.imageTxt}
+                instructor={item.instructor}
               />
           )
         })}
         </div>
-        <button className="load-more-btn" onClick={this.loadMore.bind(this)}>Load More</button>
+        <div className="filter-container-btn">
+          <button className="load-more-btn" onClick={this.loadMore.bind(this)}>Show More</button>
+        </div>
       </section>
     )
   }

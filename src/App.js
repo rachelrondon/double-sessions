@@ -8,6 +8,10 @@ import YogaOne from './images/yoga-one.jpg';
 import YogaThree from './images/yoga-three.jpg';
 import YogaFour from './images/yoga-four.jpg';
 import YogaSix from './images/yoga-six.jpg';
+import CollectionOne from './images/collection-one.jpg';
+import CollectionTwo from './images/collection-two.jpg';
+import CollectionThree from './images/collection-three.jpg';
+import CollectionFour from './images/collection-four.jpg';
 
 class App extends React.Component {
   constructor(props) {
@@ -17,34 +21,50 @@ class App extends React.Component {
       collection: [
           {
             id: 1,
-            category: "restorative",
+            category: "Restorative",
             collectionTitle: "Restorative Collection",
             title: "Relax & Reflex",
-            image: YogaOne,
+            image: CollectionOne,
             imageTxt: "restorative yoga"
           },
           {
             id: 2,
-            category: "sculpt",
+            category: "Sculpt",
             collectionTitle: "Yoga Sculpt",
             title: "Relax & sculpt",
-            image: YogaThree,
+            image: CollectionTwo,
             imageTxt: "yoga sculpt"
           },
           {
             id: 3,
-            category: "flow",
+            category: "Flow",
             collectionTitle: "Flow",
             title: "Beginner yoga flows",
-            image: YogaFour,
+            image: CollectionThree,
             imageTxt: "yoga flow"
           },
           {
             id: 4,
-            category: "sculpt",
+            category: "Sculpt",
             collectionTitle: "sculpt",
             title: "20 minute yoga sculpts",
-            image: YogaFour,
+            image:CollectionFour,
+            imageTxt: "yoga sculpt"
+          },
+          {
+            id: 5,
+            category: "Flow",
+            collectionTitle: "Flow",
+            title: "Beginner yoga flows",
+            image: CollectionOne,
+            imageTxt: "yoga flow"
+          },
+          {
+            id: 6,
+            category: "Sculpt",
+            collectionTitle: "sculpt",
+            title: "20 minute yoga sculpts",
+            image: CollectionTwo,
             imageTxt: "yoga sculpt"
           },
       ],
@@ -53,180 +73,200 @@ class App extends React.Component {
           id: 1,
           favorite: '',
           className: "Wind down with a restorative class",
-          category: "restorative",
+          category: "Restorative",
+          instructor: "Rachel Rondon",
           classCount: 0,
-          image: YogaOne,
+          image: CollectionOne,
           imageTxt: "restorative yoga"
         },
         {
           id: 2,
           favorite: '',
           className: "Wind down with a restorative class",
-          category: "restorative",
+          category: "Restorative",
+          instructor: "Rachel Rondon",
           classCount: 0,
-          image: YogaOne,
+          image: CollectionTwo,
           imageTxt: "restorative yoga"
         },
         {
           id: 3,
           favorite: '',
           className: "Wind down with a restorative class",
-          category: "restorative",
+          category: "Restorative",
+          instructor: "Rachel Rondon",
           classCount: 0,
-          image: YogaOne,
+          image: CollectionThree,
           imageTxt: "restorative yoga"
         },
         {
           id: 4,
           favorite: '',
           className: "Wind down with a restorative class",
-          category: "restorative",
+          category: "Restorative",
+          instructor: "Rachel Rondon",
           classCount: 0,
-          image: YogaOne,
+          image: CollectionFour,
           imageTxt: "restorative yoga"
         },
         {
           id: 5,
           favorite: '',
           className: "One hour Yoga Sculpt Class",
-          category: "sculpt",
+          category: "Sculpt",
+          instructor: "Rachel Rondon",
           classCount: 0,
-          image: YogaThree,
+          image: CollectionOne,
           imageTxt: 'sculpt yoga'
         },
         {
           id: 6,
           favorite: '',
           className: "One hour Yoga Sculpt Class",
-          category: "sculpt",
+          category: "Sculpt",
+          instructor: "Rachel Rondon",
           classCount: 0,
-          image: YogaThree,
+          image: CollectionTwo,
           imageTxt: 'sculpt yoga'
         },
         {
           id: 7,
           favorite: '',
           className: "One hour Yoga Sculpt Class",
-          category: "sculpt",
+          category: "Sculpt",
+          instructor: "Rachel Rondon",
           classCount: 0,
-          image: YogaThree,
+          image: CollectionThree,
           imageTxt: 'sculpt yoga'
         },
         {
           id: 8,
           favorite: '',
           className: "One hour Yoga Sculpt Class",
-          category: "sculpt",
+          category: "Sculpt",
+          instructor: "Rachel Rondon",
           classCount: 0,
-          image: YogaThree,
+          image: CollectionFour,
           imageTxt: 'sculpt yoga'
         },
         {
           id: 9,
           favorite: '',
           className: "Deep Stretch with a Yoga Flow",
-          category: "flow",
+          category: "Flow",
+          instructor: "Rachel Rondon",
           classCount: 0,
-          image: YogaThree,
+          image: CollectionOne,
           imageTxt: 'yoga flow'
         },
         {
           id: 10,
           favorite: '',
           className: "Flow Class",
-          category: "flow",
+          category: "Flow",
+          instructor: "Rachel Rondon",
           classCount: 0,
-          image: YogaFour,
+          image: CollectionTwo,
           imageTxt: "yoga flow"
         },
         {
           id: 11,
           favorite: '',
           className: "Flow Class",
-          category: "flow",
+          category: "Flow",
+          instructor: "Rachel Rondon",
           classCount: 0,
-          image: YogaFour,
+          image: CollectionThree,
           imageTxt: "yoga flow"
         },
         {
           id: 12,
           favorite: '',
           className: "Flow Class",
-          category: "flow",
+          category: "Flow",
+          instructor: "Rachel Rondon",
           classCount: 0,
-          image: YogaFour,
+          image: CollectionFour,
           imageTxt: "yoga flow"
         },
         {
           id: 13,
           favorite: '',
           className: "Flow Class",
-          category: "flow",
+          category: "Flow",
+          instructor: "Rachel Rondon",
           classCount: 0,
-          image: YogaFour,
+          image: CollectionOne,
           imageTxt: "yoga flow"
         },
         {
           id: 14,
           favorite: '',
           className: "Sculpt Class",
-          category: "sculpt",
+          category: "Sculpt",
+          instructor: "Rachel Rondon",
           classCount: 0,
-          image: YogaThree,
+          image: CollectionTwo,
           imageTxt: "sculpt yoga"
         },
         {
           id: 15,
           favorite: '',
           className: "Restorative class",
-          category: "restorative",
+          category: "Restorative",
+          instructor: "Rachel Rondon",
           classCount: 0,
-          image: YogaSix,
+          image: CollectionThree,
           imageTxt: "restorative yoga"
         },
         {
           id: 16,
           favorite: '',
           className: "Sculpt Class",
-          category: "sculpt",
+          category: "Sculpt",
+          instructor: "Rachel Rondon",
           classCount: 0,
-          image: YogaThree,
+          image: CollectionFour,
           imageTxt: "sculpt yoga"
         },
         {
           id: 17,
           favorite: '',
           className: "Flow Class",
-          category: "flow",
+          category: "Flow",
+          instructor: "Rachel Rondon",
           classCount: 0,
-          image: YogaFour,
+          image: CollectionOne,
           imageTxt: "yoga flow"
         },
         {
           id: 18,
           favorite: '',
           className: "One hour Yoga Sculpt Class",
-          category: "sculpt",
+          category: "Sculpt",
+          instructor: "Rachel Rondon",
           classCount: 0,
-          image: YogaThree,
+          image: CollectionTwo,
           imageTxt: 'sculpt yoga'
         },
         {
           id: 19,
           favorite: '',
           className: "Deep Stretch with a Yoga Flow",
-          category: "flow",
+          category: "Flow",
+          instructor: "Rachel Rondon",
           classCount: 0,
-          image: YogaThree,
+          image: CollectionThree,
           imageTxt: 'yoga flow'
         },
         {
           id: 20,
           favorite: '',
           className: "Wind down with a restorative class",
-          category: "restorative",
+          category: "Restorative",
+          instructor: "Rachel Rondon",
           classCount: 0,
-          image: YogaOne,
+          image: CollectionFour,
           imageTxt: "restorative yoga"
         },
       ],

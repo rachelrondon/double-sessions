@@ -5,23 +5,29 @@ class Collection extends React.Component {
   constructor(props) {
     super(props);
 
+    this.state = {
+
+    };
   }
 
   render() {
     return (
       <div className="collection-container">
-      {this.props.collection.map((item) => {
-        return (
-          <CardCollection
-            key={item.id}
-            category={item.category}
-            collectionTitle={item.collectionTitle}
-            title={item.title}
-            image={item.image}
-            imageTxt={item.imageTxt}
-          />
-        )
-      })}
+      <h2>View All Collections</h2>
+      <div className="collection-cards">
+        {this.props.collection.map((item) => {
+          return (
+            <CardCollection
+              key={item.id}
+              category={item.category}
+              collectionTitle={item.collectionTitle}
+              title={item.title}
+              image={item.image}
+              imageTxt={item.imageTxt}
+            />
+          )
+        })}
+        </div>
       </div>
     )
   }

@@ -83,12 +83,16 @@ ul {
 
 .card-image {
   width: 100%;
-  height: auto;
+  height: 10rem;
 }
 
 .collection-image {
   width: 100%;
-  height: auto;
+  height: 15rem;
+}
+
+.card-content-instructor {
+  font-weight: 100;
 }
 
 .card-text {
@@ -136,12 +140,13 @@ ul {
 }
 
 .load-more-btn {
-  padding: 0.5rem;
+  padding: 0.75rem 1.5rem;
   border: 1px solid #ced4d6;
   color: #000000;
   background-color: #ffffff;
   border-radius: 1rem;
-  width: 100%;
+  font-weight: 1rem;
+  font-weight: bold;
 }
 
 .filter-container {
@@ -153,7 +158,13 @@ ul {
   font-family: "Graphik Web Medium",sans-serif
 }
 
+.filter-container-btn {
+  display: flex;
+  justify-content: center;
+}
+
 .collection-container {
+  margin-top: 2rem;
   max-width: 68rem;
   justify-content: space-between;
   display: flex;
@@ -165,13 +176,22 @@ ul {
 }
 
 .collection-card-container {
-  width: 33%;
-  height: auto;
+  width: 21rem;
+  height: 19rem;
   display: flex;
+  margin: 0.5rem 0;
   flex-direction: column;
   background-color: #faf9f7;
   font-weight: regular;
   font-family: "Graphik Web Medium",sans-serif
+}
+
+.collection-cards {
+  display: flex;
+  flex-direction: row;
+  max-width: 68rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .scrolled {
