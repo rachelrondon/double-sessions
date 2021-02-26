@@ -60,10 +60,6 @@ class Filter extends React.Component {
     })
   }
 
-  addFavorite() {
-
-  }
-
   render() {
     return (
       <section className="filter-container">

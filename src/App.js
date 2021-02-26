@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Filter from './filter.js';
 import Nav from './nav.js';
+import Collection from './collection.js';
 import YogaOne from './images/yoga-one.jpg';
 import YogaThree from './images/yoga-three.jpg';
 import YogaFour from './images/yoga-four.jpg';
@@ -13,6 +14,40 @@ class App extends React.Component {
     super(props);
 
     this.state = {
+      collection: [
+          {
+            id: 1,
+            category: "restorative",
+            collectionTitle: "Restorative Collection",
+            title: "Relax & Reflex",
+            image: YogaOne,
+            imageTxt: "restorative yoga"
+          },
+          {
+            id: 2,
+            category: "sculpt",
+            collectionTitle: "Yoga Sculpt",
+            title: "Relax & sculpt",
+            image: YogaThree,
+            imageTxt: "yoga sculpt"
+          },
+          {
+            id: 3,
+            category: "flow",
+            collectionTitle: "Flow",
+            title: "Beginner yoga flows",
+            image: YogaFour,
+            imageTxt: "yoga flow"
+          },
+          {
+            id: 4,
+            category: "sculpt",
+            collectionTitle: "sculpt",
+            title: "20 minute yoga sculpts",
+            image: YogaFour,
+            imageTxt: "yoga sculpt"
+          },
+      ],
       data: [
         {
           id: 1,
@@ -201,8 +236,9 @@ class App extends React.Component {
   render() {
     return (
         <div className="App">
-          <Nav /> 
+          <Nav />
           <Filter data={this.state.data} />
+          <Collection collection={this.state.collection} />
         </div>
     )
   }

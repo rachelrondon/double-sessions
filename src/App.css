@@ -86,7 +86,23 @@ ul {
   height: auto;
 }
 
+.collection-image {
+  width: 100%;
+  height: auto;
+}
+
 .card-text {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: solid;
+  position: absolute;
+  margin: 0.5rem;
+  top: 0;
+  padding: 0.5rem;
+}
+
+.collection-title {
   color: #ffffff;
   text-transform: uppercase;
   font-size: 0.75rem;
@@ -130,6 +146,27 @@ ul {
 
 .filter-container {
   max-width: 68rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #faf9f7;
+  font-weight: regular;
+  font-family: "Graphik Web Medium",sans-serif
+}
+
+.collection-container {
+  max-width: 68rem;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: #faf9f7;
+  font-weight: regular;
+  font-family: "Graphik Web Medium",sans-serif
+}
+
+.collection-card-container {
+  width: 45%;
+  margin: 1rem;
   display: flex;
   flex-direction: column;
   background-color: #faf9f7;
