@@ -10,6 +10,8 @@ class Filter extends React.Component {
       filterData: this.props.data,
       showCount: 3,
       favorites: [],
+      expanded: false,
+      btnText: "Show More"
     }
   }
 
@@ -55,12 +57,22 @@ class Filter extends React.Component {
   }
 
   loadMore() {
-    this.setState({
-      showCount: this.state.showCount + 3
+    this.state.showCount === 3 ? (
+      this.setState({
+        showCount: this.state.showCount + 3,
+        expanded: true,
+        btnText: "Show Less"
+      })
+    ) : this.setState({
+      showCount: 3,
+      expanded: false,
+      btnText: "Show More"
     })
   }
 
   render() {
+    let expanded = this.state.expanded;
+
     return (
       <section className="filter-container">
         <div className="filter-btns">
@@ -86,7 +98,7 @@ class Filter extends React.Component {
         })}
         </div>
         <div className="filter-container-btn">
-          <button className="load-more-btn" onClick={this.loadMore.bind(this)}>Show More</button>
+          <button className="load-more-btn" onClick={this.loadMore.bind(this)}>{this.state.btnText}</button>
         </div>
       </section>
     )

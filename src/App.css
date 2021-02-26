@@ -95,6 +95,11 @@ ul {
   font-weight: 100;
 }
 
+.card-content-class {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
 .card-text {
   color: #ffffff;
   text-transform: uppercase;

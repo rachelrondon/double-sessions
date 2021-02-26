@@ -9,7 +9,7 @@ const Card = ({className, category, classCount, image, imageTxt, key, instructor
           <p className="card-text">{category}</p>
         </div>
         <div className="card-content">
-          <p>{className}</p>
+          <p className="card-content-class">{className}</p>
           <p className="card-content-instructor">{instructor} &#8226; {category}</p>
         </div>
       </section>
