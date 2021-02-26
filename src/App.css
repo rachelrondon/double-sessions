@@ -171,6 +171,17 @@ ul {
   font-family: "Graphik Web Medium",sans-serif
 }
 
+.hero-container {
+  max-width: 68rem;
+  height: auto;
+  margin: 2rem 0;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+}
+
 .filter-container-btn {
   display: flex;
   justify-content: center;

@@ -4,6 +4,7 @@ import './App.css';
 import Filter from './filter.js';
 import Nav from './nav.js';
 import Collection from './collection.js';
+import Hero from './hero.js';
 import YogaOne from './images/yoga-one.jpg';
 import YogaThree from './images/yoga-three.jpg';
 import YogaFour from './images/yoga-four.jpg';
@@ -277,6 +278,7 @@ class App extends React.Component {
     return (
         <div className="App">
           <Nav />
+          <Hero />
           <Filter data={this.state.data} />
           <Collection collection={this.state.collection} />
         </div>
