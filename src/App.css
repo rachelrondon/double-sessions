@@ -104,7 +104,7 @@ ul {
   color: #ffffff;
   text-transform: uppercase;
   font-size: 0.75rem;
-  font-weight: solid;
+  font-weight: bold;
   position: absolute;
   margin: 0.5rem;
   top: 0;
@@ -113,13 +113,21 @@ ul {
 
 .collection-title {
   color: #ffffff;
+  position: absolute;
   text-transform: uppercase;
   font-size: 0.75rem;
-  font-weight: solid;
-  position: absolute;
-  margin: 0.5rem;
+  font-weight: bold;
+  margin: 1rem;
   top: 0;
-  padding: 0.5rem;
+}
+
+.collection-text {
+  font-weight: bold;
+  color: #ffffff;
+  position: absolute;
+  top: 0;
+  margin: 1rem;
+  padding-top: 2rem;
 }
 
 .card-favorite {
@@ -188,6 +196,7 @@ ul {
   flex-direction: column;
   background-color: #faf9f7;
   font-weight: regular;
+  position: relative;
   font-family: "Graphik Web Medium",sans-serif
 }
 
