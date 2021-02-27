@@ -82,12 +82,12 @@ class Filter extends React.Component {
       return item.category.includes(newInput) || item.className.includes(newInput);
     })
 
-    filteredList.length >= 1 ? {
+    if (filteredList.length >= 1) {
       this.setState({
         loadMoreBtnClass: "load-more-btn",
         filterData: filteredList,
       })
-    } : {
+    } else {
       this.setState({
         loadMoreBtnClass: "hidden",
         filterData: filteredList,
