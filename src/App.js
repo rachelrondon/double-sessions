@@ -20,7 +20,7 @@ class App extends React.Component {
     super(props);
 
     this.state = {
-      footerTxt: "© Double Sessions",
+      footerTxt: "© Rachel Rondon",
       collection: [
           {
             id: 1,
