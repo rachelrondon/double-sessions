@@ -75,7 +75,7 @@ class Filter extends React.Component {
 
     return (
       <section className="filter-container">
-        <h2>View Classes</h2>
+        <h2 className="filter-classes">View Classes</h2>
         <div className="filter-btns">
           <button onClick={this.showFlow.bind(this)} className="btn">Flow</button>
           <button onClick={this.showSculpt.bind(this)} className="btn">Sculpt</button>

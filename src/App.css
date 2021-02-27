@@ -76,7 +76,7 @@ ul {
   height: auto;
   display: flex;
   flex-direction: column;
-  margin: 1rem;
+  margin: 1rem 0;
   position: relative;
   text-align: left;
 }
@@ -169,6 +169,10 @@ ul {
   background-color: #faf9f7;
   font-weight: regular;
   font-family: "Graphik Web Medium",sans-serif
+}
+
+.filter-classes {
+  margin-left: 1rem;
 }
 
 .hero-container {
