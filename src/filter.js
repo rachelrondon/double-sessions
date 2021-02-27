@@ -120,7 +120,7 @@ class Filter extends React.Component {
             </form>
           </div>
         </div>
-        <div className="container">
+        <div className="filter-card-container">
         {this.state.filterData.slice(0, this.state.showCount).map((item) => {
           return (
             <Card

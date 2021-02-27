@@ -14,6 +14,10 @@ import CollectionOne from './images/collection-one.jpg';
 import CollectionTwo from './images/collection-two.jpg';
 import CollectionThree from './images/collection-three.jpg';
 import CollectionFour from './images/collection-four.jpg';
+import CollectionSquareOne from './images/collection-square-one.jpg';
+import CollectionSquareTwo from './images/collection-square-two.jpg';
+import CollectionSquareThree from './images/collection-square-three.jpg';
+import CollectionSquareFour from './images/collection-square-four.jpg';
 
 class App extends React.Component {
   constructor(props) {
@@ -25,49 +29,17 @@ class App extends React.Component {
           {
             id: 1,
             category: "Restorative",
-            collectionTitle: "Restorative Collection",
+            collectionTitle: "Restorative Yoga Collection",
             title: "Relax & Reflex",
-            image: CollectionOne,
+            image: CollectionSquareOne,
             imageTxt: "restorative yoga"
           },
           {
             id: 2,
             category: "Sculpt",
-            collectionTitle: "Yoga Sculpt",
+            collectionTitle: "Yoga Sculpt Collection",
             title: "Relax & sculpt",
-            image: CollectionTwo,
-            imageTxt: "yoga sculpt"
-          },
-          {
-            id: 3,
-            category: "Flow",
-            collectionTitle: "Flow",
-            title: "Beginner yoga flows",
-            image: CollectionThree,
-            imageTxt: "yoga flow"
-          },
-          {
-            id: 4,
-            category: "Sculpt",
-            collectionTitle: "sculpt",
-            title: "20 minute yoga sculpts",
-            image:CollectionFour,
-            imageTxt: "yoga sculpt"
-          },
-          {
-            id: 5,
-            category: "Flow",
-            collectionTitle: "Flow",
-            title: "Beginner yoga flows",
-            image: CollectionOne,
-            imageTxt: "yoga flow"
-          },
-          {
-            id: 6,
-            category: "Sculpt",
-            collectionTitle: "sculpt",
-            title: "20 minute yoga sculpts",
-            image: CollectionTwo,
+            image: CollectionSquareFour,
             imageTxt: "yoga sculpt"
           },
       ],
@@ -79,7 +51,7 @@ class App extends React.Component {
           category: "Restorative",
           instructor: "Rachel Rondon",
           classCount: 0,
-          image: CollectionOne,
+          image: CollectionFour,
           imageTxt: "restorative yoga"
         },
         {
