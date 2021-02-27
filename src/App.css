@@ -168,6 +168,7 @@ ul {
 }
 
 .load-more-btn {
+  display: flex;
   padding: 0.75rem 1.5rem;
   border: 1px solid #ced4d6;
   color: #000000;
@@ -265,4 +266,8 @@ ul {
 
 .footer-container p {
   margin: 0;
+}
+
+.hidden {
+  display: none;
 }

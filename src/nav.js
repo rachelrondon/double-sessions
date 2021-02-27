@@ -29,10 +29,6 @@ const Nav = () => {
           <h1>Double Sessions</h1>
         </div>
         <nav className="navigation">
-          <ul>
-            <li>Search</li>
-            <li>Favorites</li>
-          </ul>
         </nav>
       </div>
     </header>

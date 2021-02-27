@@ -13,6 +13,7 @@ class Filter extends React.Component {
       expanded: false,
       btnText: "Show More",
       searchTerm: "",
+      loadMoreBtnClass: "load-more-btn"
     }
   }
 
@@ -76,19 +77,27 @@ class Filter extends React.Component {
     let inputText = this.state.searchTerm;
     let firstLetter = inputText[0];
     let newInput = inputText.replace(firstLetter, firstLetter.toUpperCase());
+
     let filteredList = this.props.data.filter((item) => {
       return item.category.includes(newInput) || item.className.includes(newInput);
     })
 
-    this.setState({
-      filterData: filteredList
-    })
+    if (filteredList.length >= 1) {
+      this.setState({
+        loadMoreBtnClass: "load-more-btn",
+        filterData: filteredList
+      })
+    } else {
+      this.setState({
+        loadMoreBtnClass: "hidden",
+        filterData: filteredList
+      })
+    }
   }
 
   render() {
     let expanded = this.state.expanded;
-    console.log("this is the searchTerm");
-    console.log(this.state.searchTerm);
+    console.log(this.state.filterData);
 
     return (
       <section className="filter-container">
@@ -128,7 +137,7 @@ class Filter extends React.Component {
         })}
         </div>
         <div className="filter-container-btn">
-          <button className="load-more-btn" onClick={this.loadMore.bind(this)}>{this.state.btnText}</button>
+          <button className={this.state.loadMoreBtnClass} onClick={this.loadMore.bind(this)}>{this.state.btnText}</button>
         </div>
       </section>
     )
