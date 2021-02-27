@@ -177,6 +177,13 @@ ul {
   font-weight: bold;
 }
 
+.filters {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .filter-container {
   width: 68rem;
   display: flex;
@@ -257,5 +264,5 @@ ul {
 }
 
 .footer-container p {
-  margin: 0; 
+  margin: 0;
 }

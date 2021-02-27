@@ -11,7 +11,8 @@ class Filter extends React.Component {
       showCount: 3,
       favorites: [],
       expanded: false,
-      btnText: "Show More"
+      btnText: "Show More",
+      searchTerm: "",
     }
   }
 
@@ -70,17 +71,45 @@ class Filter extends React.Component {
     })
   }
 
+  handleSubmit(e) {
+    e.preventDefault();
+    let inputText = this.state.searchTerm;
+    let firstLetter = inputText[0];
+    let newInput = inputText.replace(firstLetter, firstLetter.toUpperCase());
+    let filteredList = this.props.data.filter((item) => {
+      return item.category.includes(newInput) || item.className.includes(newInput);
+    })
+
+    this.setState({
+      filterData: filteredList
+    })
+  }
+
   render() {
     let expanded = this.state.expanded;
+    console.log("this is the searchTerm");
+    console.log(this.state.searchTerm);
 
     return (
       <section className="filter-container">
         <h2 className="filter-classes">View Classes</h2>
-        <div className="filter-btns">
-          <button onClick={this.showFlow.bind(this)} className="btn">Flow</button>
-          <button onClick={this.showSculpt.bind(this)} className="btn">Sculpt</button>
-          <button onClick={this.showRestorative.bind(this)} className="btn">Restorative</button>
-          <button onClick={this.showAll.bind(this)} className="btn">Show All</button>
+        <div className="filters">
+          <div className="filter-btns">
+            <button onClick={this.showFlow.bind(this)} className="btn">Flow</button>
+            <button onClick={this.showSculpt.bind(this)} className="btn">Sculpt</button>
+            <button onClick={this.showRestorative.bind(this)} className="btn">Restorative</button>
+            <button onClick={this.showAll.bind(this)} className="btn">Show All</button>
+          </div>
+          <div className="filter-search">
+            <form onSubmit={this.handleSubmit.bind(this)}>
+              <input
+                type="text"
+                placeholder="search"
+                value={this.state.searchTerm}
+                onChange={(e) => this.setState({searchTerm: e.target.value})}
+              />
+            </form>
+          </div>
         </div>
         <div className="container">
         {this.state.filterData.slice(0, this.state.showCount).map((item) => {
