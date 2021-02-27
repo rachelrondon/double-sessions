@@ -72,11 +72,13 @@ ul {
 }
 
 .card-container {
-  width: 25%;
+  width: 21rem;
   height: auto;
   display: flex;
   flex-direction: column;
-  margin: 1rem 0;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 0;
   position: relative;
   text-align: left;
 }
@@ -163,7 +165,7 @@ ul {
 }
 
 .filter-container {
-  max-width: 68rem;
+  width: 68rem;
   display: flex;
   flex-direction: column;
   background-color: #faf9f7;
