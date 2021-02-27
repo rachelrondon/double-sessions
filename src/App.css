@@ -229,7 +229,7 @@ ul {
 }
 
 .collection-card-container {
-  width: 50%;
+  width: 49.5%;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -245,14 +245,6 @@ ul {
   max-width: 68rem;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-
-.collection-cards .collection-card-container:first-child .collection-card {
-  margin-right: 0.5rem;
-}
-
-.collection-cards .collection-card-container:nth-child(2) .collection-card {
-  margin-left: 0.5rem;
 }
 
 .scrolled {
