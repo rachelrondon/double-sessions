@@ -200,15 +200,15 @@ ul {
   margin-left: 1rem;
 }
 
-.hero-container {
-  max-width: 68rem;
-  height: auto;
-  margin: 5rem 0;
-}
-
 .hero-image {
   width: 100%;
   height: auto;
+}
+
+.hero-container {
+  max-width: 68rem;
+  height: auto;
+  margin: 5rem 0.5rem;
 }
 
 .filter-container-btn {
@@ -271,4 +271,50 @@ ul {
 
 .hidden {
   display: none;
+}
+
+@media only screen and (max-width: 992px) {
+  .hero-container {
+    width: 100%;
+    height: auto;
+    margin: 5rem 0.5rem;
+  }
+
+  .filter-card-container {
+    max-width: 48rem;
+  }
+  .filter-container {
+    max-width: 48rem;
+  }
+  .card-container {
+    width: 49.5%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hero-container {
+    width: 100%;
+    height: auto;
+    margin: 5rem 0.5rem;
+  }
+
+  .filters {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+  }
+  .filter-search {
+    margin: 0.5rem;
+  }
+  .filter-card-container {
+    max-width: 24rem;
+  }
+  .filter-container {
+    max-width: 24rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .card-container {
+    width: 100%;
+  }
 }
