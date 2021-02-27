@@ -5,6 +5,7 @@ import Filter from './filter.js';
 import Nav from './nav.js';
 import Collection from './collection.js';
 import Hero from './hero.js';
+import Footer from './footer.js';
 import YogaOne from './images/yoga-one.jpg';
 import YogaThree from './images/yoga-three.jpg';
 import YogaFour from './images/yoga-four.jpg';
@@ -19,6 +20,7 @@ class App extends React.Component {
     super(props);
 
     this.state = {
+      footerTxt: "© Double Sessions",
       collection: [
           {
             id: 1,
@@ -281,6 +283,7 @@ class App extends React.Component {
           <Hero />
           <Filter data={this.state.data} />
           <Collection collection={this.state.collection} />
+          <Footer footerTxt={this.state.footerTxt} />
         </div>
     )
   }
