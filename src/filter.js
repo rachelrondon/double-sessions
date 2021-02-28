@@ -100,7 +100,7 @@ class Filter extends React.Component {
     console.log(this.state.filterData);
 
     return (
-      <section className="filter-container">
+      <section id="yoga-classes" className="filter-container">
         <h2 className="filter-classes">View Classes</h2>
         <div className="filters">
           <div className="filter-btns">

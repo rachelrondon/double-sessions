@@ -12,7 +12,7 @@ class Collection extends React.Component {
 
   render() {
     return (
-      <div className="collection-container">
+      <div id="yoga-collections" className="collection-container">
       <h2>View All Collections</h2>
       <div className="collection-cards">
         {this.props.collection.map((item) => {
