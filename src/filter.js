@@ -29,7 +29,7 @@ class Filter extends React.Component {
     let filteredList = this.props.data.filter((item) => {
       return item.category === "Flow";
     });
-    this.setState({
+    this.setState(
       category: 'flow',
       filterData: filteredList,
       showCount: 3,
