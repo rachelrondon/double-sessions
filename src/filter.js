@@ -22,6 +22,7 @@ class Filter extends React.Component {
       category: 'all',
       filterData: this.props.data,
       showCount: 3,
+      btnText: "Show More"
     })
   }
 
@@ -34,6 +35,7 @@ class Filter extends React.Component {
       category: 'flow',
       filterData: filteredList,
       showCount: 3,
+      btnText: "Show More"
     })
   }
 
@@ -45,6 +47,7 @@ class Filter extends React.Component {
       category: 'sculpt',
       filterData: filteredList,
       showCount: 3,
+      btnText: "Show More"
     })
   }
 
@@ -56,6 +59,7 @@ class Filter extends React.Component {
       category: 'restorative',
       filterData: filteredList,
       showCount: 3,
+      btnText: "Show More"
     })
   }
 
